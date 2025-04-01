@@ -7,10 +7,10 @@ def elemento_mayoritario(arr):
     n = len(arr)
     cont = {}
 
-    for num in arr:
-        cont[num] = cont.get(num, 0) + 1
-        if cont[num] > n // 2:
-            return num
+    for i in arr:
+        cont[i] = cont.get(i, 0) + 1
+        if cont[i] > n // 2:
+            return i
     return None
 
 example = [3, 3, 4, 2, 4, 4, 2, 4, 4]
