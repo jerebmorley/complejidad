@@ -13,7 +13,7 @@ def elemento_mayoritario(arr):
             return i
     return None
 
-example = [3, 3, 4, 2, 4, 4, 2, 4, 4]
+example = [3, 3, 4, 2, 3, 3, 3, 1]
 result = elemento_mayoritario(example)
 if result:
     print(f"El elemento mayoritario es: {result}")
