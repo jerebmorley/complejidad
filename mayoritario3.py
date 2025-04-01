@@ -1,4 +1,4 @@
-def mayoritario_rapido(nums):
+def mayoritario_rapido(nums):  # No hay forma de verificar que no hay un mayoritario
     candidato, conteo = None, 0
 
     for num in nums:
