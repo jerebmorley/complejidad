@@ -1,0 +1,1 @@
+En la carpeta dist se encuentra el ejecutable, poner como numero de inicio 2 o superior.
