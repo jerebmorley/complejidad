@@ -49,12 +49,12 @@ fin = time.time()
 tiempo_kar = fin - ini
 
 ini1 = time.time()
-res_clasica = tradicional(u, v)
+res_trad = tradicional(u, v)
 fin1 = time.time()
-tiempo_clasica = fin1 - ini1
+tiempo_trad = fin1 - ini1
 
-print(f"\nMultiplicación clásica: {res_clasica}")
-print(f"Tiempo: {tiempo_clasica:.8f} segundos")
+print(f"\nMultiplicación clásica: {res_trad}")
+print(f"Tiempo: {tiempo_trad:.4f} segundos")
 
 print(f"\nKaratsuba: {res_kar}")
-print(f"Tiempo: {tiempo_kar:.8f} segundos")
+print(f"Tiempo: {tiempo_kar:.4f} segundos")
