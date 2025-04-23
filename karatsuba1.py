@@ -38,8 +38,13 @@ def karatsuba(u, v):
 
     return ac * 10**(2*m) + (suma_prod - ac - bd) * 10**m + bd
 
-u = 2**500
-v = 2**500
+"""
+u = input("Introduce el primer número: ")
+v = input("Introduce el segundo número: ")  
+"""
+
+u = 2**5
+v = 2**5
 
 ini = time.time()
 res_kar = karatsuba(u, v)
@@ -56,3 +61,14 @@ print(f"Tiempo: {tiempo_trad:.4f} segundos")
 
 print(f"\nKaratsuba: {res_kar}")
 print(f"Tiempo: {tiempo_kar:.4f} segundos")
+
+print("\nEl resultado es correcto: " + str(res_kar == res_trad))
+
+if tiempo_kar < tiempo_trad:
+    print(f"\nDiferencia de tiempo: {tiempo_trad - tiempo_kar:.8f} segundos")
+    print(f"\nKaratsuba es un {(tiempo_kar/tiempo_trad)*100:.2f}% más rápido")
+else:
+    print(f"\nDiferencia de tiempo: {tiempo_kar - tiempo_trad:.8f} segundos")
+    print(f"\nKaratsuba es un {(tiempo_trad/tiempo_kar)*100:.2f}% más lento")
+
+    
