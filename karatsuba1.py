@@ -7,11 +7,9 @@ def tradicional(u, v):
 
     n = max(len(str(u)), len(str(v)))
     m = n // 2
-
     
     a, b = divmod(u, 10**m)
     c, d = divmod(v, 10**m)
-
     
     ac = tradicional(a, c)
     bd = tradicional(b, d)
