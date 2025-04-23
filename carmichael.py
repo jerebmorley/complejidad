@@ -44,9 +44,6 @@ def buscar_carmichael(inicio, fin):
             resultado.append(n)
     return resultado
 
-# -----------------------------
-# Programa principal
-# -----------------------------
 
 inicio = int(input("Ingrese el número de inicio: "))
 fin = int(input("Ingrese el número de fin: "))
