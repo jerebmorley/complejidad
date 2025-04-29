@@ -38,7 +38,7 @@ def buscar_carmichael(inicio, fin):
     resultado = []
     for n in range(inicio, fin + 1):
         if not primos[n]:  # solo compuestos
-            if es_carmichael(n): 
+            if es_carmichael(n) and n != 1: 
                 resultado.append(n)
     return resultado
 
