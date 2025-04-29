@@ -18,7 +18,6 @@ def tradicional(u, v):
 
     return ac * 10**(2*m) + (ad + bc) * 10**m + bd
 
-
 # multiplicación de karatsuba (3 multiplicaciones)
 def karatsuba(u, v):
     if u < 10 or v < 10:
@@ -39,12 +38,12 @@ def karatsuba(u, v):
     return ac * 10**(2*m) + (suma_prod - ac - bd) * 10**m + bd
 
 """
-u = input("Introduce el primer número: ")
-v = input("Introduce el segundo número: ")  
+u = int(input("Introduce el primer número: "))
+v = int(input("Introduce el segundo número: "))  
 """
 
-u = 2**5
-v = 2**5
+u = 2**500
+v = 2**500
 
 ini = time.time()
 res_kar = karatsuba(u, v)
@@ -57,10 +56,10 @@ fin1 = time.time()
 tiempo_trad = fin1 - ini1
 
 print(f"\nMultiplicación clásica: {res_trad}")
-print(f"Tiempo: {tiempo_trad:.4f} segundos")
+print(f"Tiempo: {tiempo_trad:.8f} segundos")
 
 print(f"\nKaratsuba: {res_kar}")
-print(f"Tiempo: {tiempo_kar:.4f} segundos")
+print(f"Tiempo: {tiempo_kar:.8f} segundos")
 
 print("\nEl resultado es correcto: " + str(res_kar == res_trad))
 
